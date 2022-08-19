@@ -24,9 +24,9 @@ function Feed() {
         <Posts />
       </section>
       {session && (
-        <section className="hidden lg:inline-grid md:col-span-1 lg:-ml-9 xl:-ml-3">
+        <section className="hidden lg:inline-grid md:col-span-1 lg:-ml-9 xl:ml-2">
           {/* Mini profile */}
-          <div className="fixed bg-white">
+          <div className="fixed">
             <MiniProfile />
             <Suggestions />
           </div>
