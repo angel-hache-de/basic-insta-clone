@@ -6,7 +6,7 @@ import Modal from "../components/Modal";
 export default function Home() {
   return (
     <div
-      className="bg-gray-50 h-screen 
+      className="bg-gray-200 h-screen 
       overflow-y-scroll scrollbar-hide"
     >
       <Head>
@@ -14,11 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/*<h1>This is instagram</h1>*/}
+
       {/* Header */}
-      <Header></Header>
+      <Header />
       {/* feed */}
-      <Feed></Feed>
+      <Feed />
       {/* Modal */}
       <Modal />
     </div>

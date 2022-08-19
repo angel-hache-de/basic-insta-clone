@@ -55,6 +55,8 @@ function Modal() {
         });
       });
 
+      setSelectedFile(null);
+      setLoading(false);
       setOpen(false);
     } catch (error) {
       alert("Something went wrong");
@@ -62,6 +64,8 @@ function Modal() {
       setSelectedFile(null);
     }
   }
+
+  if(!open) return <></>;
 
   return (
     <Transition.Root show={open} as={Fragment}>

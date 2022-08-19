@@ -5,13 +5,13 @@ function MiniProfile() {
   const { data: session } = useSession();
 
   return (
-    <div className="flex items-center justify-between mt-14 ml-10">
+    <div className="flex items-center justify-between mt-14">
       <Image
         className="rounded-full border p-[2px]"
         src={session?.user?.image}
         alt=""
-        height={64}
-        width={64}
+        height={50}
+        width={50}
       />
       <div className="flex-1 mx-4">
         <h2 className="font-bold">{session?.user?.username}</h2>
